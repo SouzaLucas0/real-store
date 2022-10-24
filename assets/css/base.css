@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+:root {
+    /* colors */
+    --black: rgba(0, 0, 0, 0.959);
+    --white: #fff;
+    --gray: #EBEBEB;
+    --blue: #65AFFF;
+    --bg-menu: #2098cc;
+    --bg-home:#f1f1f1;
+    
+    --primary-color: #2098cc;
+    --primary-color-products: #db54624f;
+    --secondary-color: #DB5461;
+}
+
+body{
+    font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+}

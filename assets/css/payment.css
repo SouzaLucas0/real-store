@@ -1,0 +1,125 @@
+.header {    
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100vw;
+    height: 50px;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.header__return {
+    font-size: .9rem;
+    margin-left: 10px;
+    width: 25%;
+}
+
+.header__title {
+    font-size: 1.3rem;
+    text-align: center;
+    width: 75%;
+    margin-right: 25vw;
+}
+
+.payment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.payment__form {
+    display: flex;    
+    flex-direction: column;
+    padding: 30px 30px 0 30px;
+}
+
+.payment__form-label {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    margin: 10px 5px;
+    font-size: .7rem;
+    color: rgb(121, 121, 121);
+}
+
+.payment__form-cvc-date{
+    display: flex;
+    justify-content: space-between;
+}
+.cvc, .date{
+    width: 48%
+}
+
+#iCvc, #iDate {
+    width: 100%;
+    display: block;
+}
+
+.input-camp {
+    border-bottom: 1px solid rgb(0, 153, 255);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+#iName {
+    text-transform: uppercase;
+}
+
+.payment__submit {
+    color: var(--white);
+    width: 300px;
+    padding: 10px 30px;
+    margin: 20px auto 0 auto;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.payment__btnCancel {
+    box-sizing: border-box;
+    text-align: center;
+    color: var(--white);
+    width: 300px;
+    padding: 10px 30px;
+    margin-top: 20px;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.payment__tip {
+    background-image: url(../../img/credit-card/credit-card.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: 200px;
+    margin: 20px 0;
+}
+
+.payment__tip--cardNumber {
+    background-image: url(../../img/credit-card/credit-card-number.jpg);
+}
+
+.payment__tip--cardCvc {
+    background-image: url(../../img/credit-card/credit-card-cvc.jpg);
+}
+
+.payment__tip--cardDate {
+    background-image: url(../../img/credit-card/credit-card-date.jpg);
+}
+
+.payment__tip--cardName {
+    background-image: url(../../img/credit-card/credit-card-name.jpg);
+}
+
+.invalid {
+    border-color: red;    
+}
+
+.valid {
+    border-color: green;
+}
+
+.invalid-span {
+    margin-top: 5px;
+    color: red;
+    font-size: .7rem;
+}

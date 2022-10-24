@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/payment.css">
+    <script src="https://kit.fontawesome.com/c020764450.js" crossorigin="anonymous"></script>
+    <title>Real | Pagamento</title>
+</head>
+<body>
+    <header class="header">
+        <a href="cart.html" class="header__return"><i class="fa-solid fa-arrow-left"></i> Voltar</a>
+        <h1 class="header__title">Finalizar compra</h1>
+    </header>
+    <main class="payment">            
+        <div class="payment__tip" data-tip></div>
+        <form class="payment__form" data-form>
+            
+            <label for="iInstallments" class="payment__form-label">Parcelas:</label>
+            <select name="installments" id="iInstallments" class="input-camp" data-installments>
+                <!--colocar span nos preços-->
+            </select>
+
+            <label for="iNumCard" class="payment__form-label">Número do cartão</label>
+            <input type="number" name="numCard" id="iNumCard"  class="input-camp" minlength="13" maxlength="16" step="1" required>
+            <span id="invalid-Card-number" class="invalid-span"></span>       
+            <div class="payment__form-cvc-date">
+                <div class="cvc">
+                    <label for="iCvc" class="payment__form-label">CVC</label>
+                    <input type="number" name="cvc" id="iCvc"  class="input-camp " minlength="3" maxlength="3" required>
+                    <span id="invalid-cvc" class="invalid-span"></span>
+                </div>
+                <div class="date">
+                    <label for="iDate" class="payment__form-label">Vencimento</label>
+                    <input type="date" name="date" id="iDate" class="input-camp" required>
+                    <span id="invalid-date" class="invalid-span"></span>
+                </div>
+            </div>       
+            <label for="iName" class="payment__form-label">Nome no cartão</label>
+            <input type="text" name="name" id="iName"  class="input-camp" required>
+            <span id="invalid-name" class="invalid-span"></span>
+            
+            <input type="submit" value="Finalizar Compra" class="payment__submit">
+        </form>
+        <a href="index.html" class="payment__btnCancel">Cancelar Pagamento</a>
+    </main>
+    <script type="module" src="assets/js/payment.js"></script>
+    <script src="assets/js/app/views/paymentClass-view.js"></script>
+</body>
+</html>

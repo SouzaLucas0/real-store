@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700,900&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/c020764450.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./assets/css/reset.css">
+        <link rel="stylesheet" href="./assets/css/base.css">
+        <link rel="stylesheet" href="./assets/css/header.css">
+        <link rel="stylesheet" href="./assets/css/erro.css">
+        <link rel="stylesheet" href="./assets/css/footer.css">
+        <title>Erro</title>
+    </head>
+    <body>
+        <header class="header">
+            <nav class="menu">
+                <img src="img/header/logo.png" alt="Logo da Real Store" class="menu__logo">
+                <div class="menu__search">
+                    <form class="search__form">
+                        <input type="search" placeholder="Pesquisar" class="search__form-input" data-search>
+                        <input type="submit" value="" class="search__form-submit" data-btnSearch>
+                    </form>
+                </div>
+                <a href="./index.html" class="menu__link menu__link--home"><i class="fa-solid fa-house-user"></i></a>
+                <a href="./cart.html" class="menu__link menu__link--cart" data-notifies="0"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+            </nav>
+        </header> 
+        <main class="error">
+            <div class="error__card">
+                <div class="alert--container">
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                    <p class="error_cart-text">Ops! Algo de errado aconteceu. Você pode tentar novamente em alguns minutos.</p>
+                    <a href="./index.html" class="home">Voltar para página inicial</a>
+                </div>
+            </div>
+        </main>
+        <script type="module" src="./assets/js/error.js"></script>
+    </body>
+</html>

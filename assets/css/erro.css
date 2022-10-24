@@ -1,0 +1,52 @@
+body{
+    background-color: var(--gray);     
+    height: 84vh;
+}
+
+.error {
+    width: 100vw; 
+    padding: 40px 0;
+}
+
+.error__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50%;
+    width: 80%;
+    background: white;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 2px 3px #C8D0D8;
+    margin: 80px auto;
+}
+
+.alert--container {
+    border-radius: 50px;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    font-size: 5rem;
+}
+
+.fa-triangle-exclamation {
+    color: rgb(107, 0, 0);
+}
+
+.error_cart-text {
+    text-align: center;
+    color: rgb(49, 49, 49);
+    font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.home {    
+    font-size: 1.2rem;
+    color: var(--white);    
+    padding: 10px 30px;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);  
+}

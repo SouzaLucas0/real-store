@@ -1,0 +1,106 @@
+body{
+    background-color: var(--gray);
+}
+
+.success {
+
+    width: 100vw;
+    padding: 40px 0;
+}
+
+.success__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    padding: 30px;
+    border-radius: 4px;
+    box-shadow: 0 2px 3px #C8D0D8;
+    margin: 0 auto;
+}
+
+.checkmark--container {
+    border-radius: 50px;
+    height: 60px;
+    width: 60px;
+    background: #F8FAF5;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.checkmark {
+    text-align: center;
+    color: #9ABC66;
+    font-size: 40px;
+    line-height: 60px;
+}
+
+.success__title {
+    text-align: center;
+    color: #88B04B;
+    font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.purchase-info {
+    padding: 20px 0;
+}
+
+.product__item{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--gray);
+    padding: 10px 0;
+}
+.productsList__item-img {
+    display: flex;
+    justify-content: center;
+    min-width: 80px;
+    height: 50px;
+}
+
+.img {
+    margin: auto;
+    width: auto;
+    height: 70%;
+}
+
+.productsList__totalValue {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.payment-info {
+    width: 100%;
+}
+.payment-info__name {
+    text-transform: uppercase;
+}
+
+td {
+    border-bottom: 1px solid black;
+    padding: 5px 0;
+    font-size: .85rem;
+}
+
+
+.payment-info__title {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.home {    
+    color: var(--white);    
+    padding: 10px 30px;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);  
+}
+
+@media screen and (min-width: 1024px) {
+    
+}

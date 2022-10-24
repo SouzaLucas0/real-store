@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700,900&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/c020764450.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./assets/css/reset.css">
+        <link rel="stylesheet" href="./assets/css/base.css">
+        <link rel="stylesheet" href="./assets/css/success.css">
+        <title>Player | Sucesso</title>
+    </head>
+    <body>    
+        <main class="success">
+            <div class="success__card">
+                <div class="checkmark--container">
+                    <i class="fa-solid fa-check checkmark"></i>
+                </div>
+                <h1 class="success__title">Sucesso!</h1>
+            
+                <div class="purchase-info">
+                    <ul class="productsList" data-productsList>
+                    <!--colocar span nos preços-->
+                    </ul>
+                    <p class="productsList__totalValue">Total: R$ <span data-totalValue></span></p>
+                    <table class="payment-info">
+                        <thead>
+                            <tr>
+                                <td colspan="2" class="payment-info__title">Dados do pagamento</td>
+                            </tr>
+                        </thead>
+                        <tbody data-paymentInfo>
+                            <tr>
+                                <td>Parcelas:</td>
+                                <td><span data-installments></span></td>
+                            </tr>
+                            <tr>
+                                <td>Nome:</td>
+                                <td><span class="payment-info__name" data-name>Lucas</span></td>
+                            </tr>
+                            <tr>
+                                <td>Cartão:</td>
+                                <td>xxxxxxxxxxxx<span data-numCard></span></td>
+                            </tr>
+                            <tr>
+                            </tr>
+                        </tbody>
+                    </table>            
+                </div>
+                <a href="./index.html" class="home">Continuar comprando</a>
+            </div>
+        </main>
+        <script type="module" src="./assets/js/success.js"></script>
+    </body>
+</html>

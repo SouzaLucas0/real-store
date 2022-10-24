@@ -1,0 +1,14 @@
+<li class="product__card">
+    <div class="product__card-img">
+        <img src="https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg" alt="WD 2TB Elements" class="img">
+    </div>
+    <div class="product__card-info">
+        <h3 class="produtc__card-title">WD 2TB Elements Portable External Hard Drive - USB 3.0 </h3>
+        <p class="product__card-price">R$ 64</p>
+
+        <div class="product__card-button">
+            <button class="product__card-button--add">Comprar</button>
+            <button class="product__card-button--remove">Remover</button>                            
+        </div>
+    </div>
+</li>

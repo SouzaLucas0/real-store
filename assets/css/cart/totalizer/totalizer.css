@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+.totalizer {
+    font-family: 'Josefin Sans', sans-serif;
+    display: grid;
+    align-items: center;
+    grid-template-areas:
+        'txt value'
+        'btn btn';
+    position: sticky;
+    bottom: 0px;
+    background-color: var(--white);
+    width: 100vw;
+    height: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    padding: 10px 0;
+}
+
+.totalizer__resume {
+    display: none;
+}
+
+.totalizer__title {    
+    grid-area: txt;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left: 10px;
+}
+.totalizer__value {
+    grid-area: value;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.totalizer__btn-finish {
+    grid-area: btn;
+    color: var(--white);
+    text-align: center;
+    font-size: 1.3rem;    
+    width: 90%;
+    padding: 10px 0;
+    margin: auto;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.totalizer__cancel {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .totalizer__btn-finish {
+        width: 80%;
+    } 
+}
+
+@media screen and (min-width: 1024px) {
+    .totalizer {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: calc(100% - 10px);
+        height: 550px;
+        bottom: unset;
+        top: 0;
+        padding: 10px;
+        margin-top: 20px;
+        margin-left: 10px;
+        box-shadow: 0 0 0;
+        border-radius: 5px;
+    }
+
+    .totalizer__resume {
+        grid-area: res;
+        display: block;
+        font-size: 2rem;
+        font-weight: 700;
+        text-align: center;
+        margin: 15% 0;
+    }
+
+    .fa-file {
+        color: var(--primary-color);
+    }
+
+    .totalizer__title {
+        font-size: 1.8rem;
+        text-align: left;
+        width: 100%;        
+    }
+
+    .totalizer__value {
+        font-size: 1.8rem;
+        text-align: left;
+        width: 100%;
+        margin: 10% 0 20% 10px;
+    }
+
+    .totalizer__btn-finish {
+        margin: 10px 0;
+    }
+
+    .totalizer__cancel {
+        display: block;
+        grid-area: del;
+        color: var(--white);
+        text-align: center;
+        font-size: 1.3rem;    
+        width: 80%;
+        padding: 10px 0;
+        background-color: var(--secondary-color);
+        border-radius: 10px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+}

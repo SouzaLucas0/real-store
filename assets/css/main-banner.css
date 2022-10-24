@@ -1,0 +1,13 @@
+.main__banner {
+    margin-top: 45px;
+    width: 100vw;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.452);
+}
+
+@media screen and (min-width: 1024px) {
+    .main__banner {
+        max-width: 1024px;
+        margin: auto;
+    }
+}

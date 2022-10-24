@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <script src="https://kit.fontawesome.com/c020764450.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/main-banner.css">
+    <link rel="stylesheet" href="./assets/css/index/products/products.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+
+    <!--organizar em uma pasta só para a Home-->
+    <title>Real | Home</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="menu">            
+            <div class="menu__logo"></div>
+            <div class="menu__search">
+                <form class="search__form">
+                    <input type="search" placeholder="Pesquisar" class="search__form-input" data-search>
+                    <input type="submit" value="" class="search__form-submit" data-btnSearch>
+                </form>
+            </div>
+            <a href="./index.html" class="menu__link menu__link--home"><i class="fa-solid fa-house-user"></i></a>
+            <a href="./cart.html" class="menu__link menu__link--cart" data-notifies="0"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+        </nav>
+    </header>
+    <main class="main">
+        <img src="img/banner/main-banner.jpg" alt="Banner Real Store"class="main__banner">
+        
+        <div class="main__order">
+            <h3 class="main__order-title"><i class="fa-sharp fa-solid fa-sort"></i> Ordenar: </h3>
+            <button class="main__order-button" data-order="name">Nome</button>
+            <button class="main__order-button" data-order="price">Preço</button>
+        </div>
+        <section class="products">
+            <!--colocar span nos preços-->
+            <ul class="products__list" data-productsList>
+            </ul>
+        </section>        
+    </main>
+    <footer class="footer">
+        <div class="footer--container">
+            <div class="footer__logo"></div>
+            <div class="footer__dev--container">
+                <p class="footer__dev">Projeto feito por <a href="https://www.linkedin.com/in/souzalucas0/" class="footer_dev-link" target="_blank">Lucas Souza</a></p>
+            </div>
+            <div class="footer__social">
+                <a href="#" class="footer__social-link"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" class="footer__social-link"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="#" class="footer__social-link"><i class="fa-brands fa-square-facebook"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="assets/js/index.js"></script>
+    <script type="module" src="assets/js/app/views/loadIcon-view.js"></script>
+</body>
+</html>

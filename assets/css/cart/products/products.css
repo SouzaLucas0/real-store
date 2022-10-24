@@ -1,0 +1,139 @@
+/*css do carrinho*/
+
+.products {
+    width: 100%;
+    padding: 15px 0;    
+    min-height: 60vh;
+}
+
+.product__item {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 65% 25% 10%;
+    grid-template-areas: 
+    'img title'
+    'qtd price'
+    'delete delete';
+    height: 200px;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: var(--white);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.13);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.product__card-img {
+    grid-area: img;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img {
+    width: auto;
+    height: 20vw;
+    max-height: 115px;
+}
+
+.produtc__card-title {
+    margin-left: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    grid-area: title;
+}
+
+.product__card-price {    
+    text-align: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+    grid-area: price;
+}
+
+.product__card-quant {
+    grid-area: qtd;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas: 
+    'quant quant quant'
+    'remov qtd adc';
+}
+
+.product_card-text {
+    grid-area: quant;
+    text-align: center;
+}
+
+.product__card-quant-remove, .product__card-quant-add {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.product__card-quant-remove {
+    grid-area: remov;
+}
+
+.product__card-quant-qtd {
+    grid-area: qtd;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.product__card-quant-add {
+    grid-area: adc;
+}
+
+.product__card-quant-remove > i {
+    padding: 10px;    
+}
+
+.product__card-quant-add > i {
+    padding: 10px;
+}
+
+.product__card-delete {
+    grid-area: delete;
+    color: var(--secondary-color);
+    justify-self: flex-end;
+    width: 30px;    
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.product__card-delete > i {
+    padding: 5px;
+}
+    
+@media screen and (min-width: 768px) {
+    .product__item {
+        margin: 5px 20px;
+    }
+
+    .produtc__card-title {
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+    }
+
+    .product__card-price {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .products {
+        width: 100%;
+        min-height: 79vh;
+    }
+
+    .product__item {
+        margin: 5px 0;
+    }
+}

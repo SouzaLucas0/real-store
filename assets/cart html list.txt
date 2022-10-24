@@ -1,0 +1,14 @@
+<li class="product__item">
+    <div class="product__card-img">
+            <img src="${img}" alt="${name}" class="img">
+    </div>
+    <h3 class="produtc__card-title">${name} </h3>
+    <p class="product__card-price">R$${price.toFixed(2)}</p>
+    <div class="product__card-quant">
+        <span class="product_card-text" data-qtd>Quant.</span>
+        <button class="product__card-quant-remove" data-cart="remove"><i data-cart="remove" class="fa-solid fa-minus"></i></button>                      
+        <span class="product__card-quant-qtd">${qtd}</span>
+        <button class="product__card-quant-add" data-cart="add"><i data-cart="add" class="fa-solid fa-plus"></i></button>
+    </div>
+    <button class="product__card-delete" data-cart="removeItem"><i data-cart="removeItem" class="fa-solid fa-trash"></i></button>
+</li>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/c020764450.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./assets/css/reset.css">
+        <link rel="stylesheet" href="./assets/css/base.css">
+        <link rel="stylesheet" href="./assets/css/header.css">
+        <link rel="stylesheet" href="./assets/css/cart.css">
+        <link rel="stylesheet" href="./assets/css/cart/products/products.css">
+        <link rel="stylesheet" href="./assets/css/cart/totalizer/totalizer.css">
+        <link rel="stylesheet" href="./assets/css/footer.css">
+        <title>Real | Carrinho</title>
+    </head>
+    <body>
+        <header class="header">
+            <nav class="menu">            
+                <div class="menu__logo"></div>
+                <div class="menu__search">
+                    <form class="search__form">
+                        <input type="search" placeholder="Pesquisar" class="search__form-input" data-search>
+                        <input type="submit" value="" class="search__form-submit" data-btnSearch>
+                    </form>
+                </div>
+                <a href="./index.html" class="menu__link menu__link--home"><i class="fa-solid fa-house-user"></i></a>
+                <a href="./cart.html" class="menu__link menu__link--cart" data-notifies="0"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+            </nav>
+        </header>
+            <main class="cart">
+                <div class="cart--container">
+                    <a href="index.html" class="cart__return"><i class="fa-solid fa-arrow-left"></i> Voltar</a>
+                    <h2 class="cart__title"><i class="fa-solid fa-cart-shopping"></i> Meu Carrinho</h2>
+                    <button class="cart__remove-all-button" data-cart="removeAll"><i class="fa-solid fa-trash"></i>Remover todos</button>
+                </div>
+                <section class="products">
+                    <ul class="products__list" data-productsList>
+                        <!--colocar span nos preços-->
+                    </ul>
+                </section>
+                <footer></footer>
+                <div class="totalizer">
+                    <h3 class="totalizer__resume"><i class="fa-solid fa-file"></i> Resumo</h3>
+
+                    <h4 class="totalizer__title">Total dos produtos:</h4>
+                    <span class="totalizer__value" data-total></span>
+                    <a href="./payment.html" class="totalizer__btn-finish" data-finish>Finalizar a compra</a>
+                    <button class="totalizer__cancel" data-cart="removeAll">Remover todos</button>
+                </div>
+            </main>
+            <footer class="footer">
+                <div class="footer--container">
+                    <div class="footer__logo"></div>
+                    <div class="footer__dev--container">
+                        <p class="footer__dev">Projeto feito por <a href="https://www.linkedin.com/in/souzalucas0/" class="footer_dev-link" target="_blank">Lucas Souza</a></p>
+                    </div>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#" class="footer__social-link"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="#" class="footer__social-link"><i class="fa-brands fa-square-facebook"></i></a>
+                    </div>
+                </div>
+            </footer>    
+        <script type="module" src="assets/js/cart.js"></script>
+        <script type="module" src="assets/js/app/views/loadIcon-view.js"></script>
+    </body>
+</html>
