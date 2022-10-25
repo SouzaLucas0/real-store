@@ -1,5 +1,3 @@
-//<i class="fa-solid fa-spinner fa-spin-pulse"></i>
-
 function setIcon(btn) {    
     if(btn.getAttribute('data-cart') != 'add' && btn.getAttribute('data-cart') != 'remove' && btn.getAttribute('data-cart') != 'removeItem') {
         console.log(btn.getAttribute('data-cart'))

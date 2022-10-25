@@ -1,6 +1,5 @@
 import { rules } from "../models/rules.js";
 
-
 function createProductsIndex (id, name, price, img, description) {
     let productCard = document.createElement('li');
     productCard.classList.add('product__card')
@@ -47,7 +46,7 @@ function createProductsCart (id, name, price, img, qtd) {
     
     return productCard;
 }
-
+//control qtd installments
 function createInstallments(value) {
     let installments;
 

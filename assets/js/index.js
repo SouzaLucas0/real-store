@@ -12,11 +12,13 @@ var productsList = $('[data-productsList]');
 var searchInput = $('[data-search]');
 
 productsList.addEventListener('click', async (element) => {
+    //btn like
     if(element.target.parentNode.id == 'like'){
         element.target.parentNode.classList.toggle('product__card-button-like--active')
     }
+    //btn add and remove
     productControler.toCart(element);
-
+    //animation btn
     loadIcon.setIcon(element.target)
     setTimeout(() => {
         qtdProductOnCart.dataset.notifies = productControler.countProductsOnCart();
@@ -25,12 +27,12 @@ productsList.addEventListener('click', async (element) => {
     
 });
 
-
+//btn order
 $$('[data-order]').forEach(btn => btn.addEventListener('click', async element => {
     let products = await helper.sort(element.target.getAttribute('data-order'));
     renderPage(products);
 }))
-
+//btn submit search bar
 $('[data-btnSearch]').addEventListener('click', element => {
     element.preventDefault()
     if(searchInput.value) search(searchInput.value);
@@ -49,7 +51,7 @@ function renderPage(list) {
     });
     qtdProductOnCart.dataset.notifies = productControler.countProductsOnCart();    
 }
-
+//search bar
 async function search(term) {    
     let list = await clienteService.search(term)
     renderPage(list);

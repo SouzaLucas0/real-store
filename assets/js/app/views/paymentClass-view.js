@@ -1,3 +1,4 @@
+//validate payment inputs
 const $ = document.querySelector.bind(document);
 
 var cardTip = $('[data-tip]');

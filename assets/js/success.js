@@ -22,7 +22,7 @@ function renderPage() {
     producs.forEach(element => {        
         productsList.appendChild(view.createProductsSuccess(element.name, element.img))
     });
-
+    //clear localstorage for new purchase
     setTimeout(() => {
         paymentController.clear();
         productControler.clear();

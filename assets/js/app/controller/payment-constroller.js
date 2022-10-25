@@ -1,9 +1,8 @@
 import { productControler } from "./product-controller.js";
 
 var payment = JSON.parse(localStorage.getItem('Payment')) || [];
-
+//save produts on cart to localstorage
 function save(formInfo) {
-
     let paymentInfo = {
         "installments" : formInfo[0].value,
         "cardNumber" : formInfo[1].value,
@@ -23,7 +22,7 @@ function clear() {
     payment.splice('');
     localStorage.Payment = JSON.stringify(payment);
 }
-
+//save to localstorage payment info
 function getPaymentInfo() {
     let cardNumber = payment[0].cardNumber;
 

@@ -1,6 +1,5 @@
 import { productControler } from "../controller/product-controller.js";
-
-
+//get products from api
 async function getConnection() {
     try{
         let connection = await fetch(`https://fakestoreapi.com/products`)
@@ -14,7 +13,7 @@ async function getConnection() {
         },1500)
     }
 }
-
+//search product by id
 async function getProduct(id) {
     try {
         let connection = await fetch(`https://fakestoreapi.com/products/${id}`)
@@ -29,7 +28,7 @@ async function getProduct(id) {
         },1500)
     }
 }
-
+// search function in index page
 async function search(term) {
     let products = await getConnection();
     let result = []
@@ -43,7 +42,7 @@ async function search(term) {
 
     return result
 }
-
+// search function in cart page
 async function searchOnCart(term) {
     let products = await productControler.getCartProducts();
     let result = []

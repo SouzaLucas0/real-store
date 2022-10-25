@@ -17,12 +17,15 @@ $$('[data-cart]').forEach(btn => btn.addEventListener('click', element => {
     setTimeout(() => {loadProducts()}, 1000);
 }))
 
+//btn add and remove
 productsList.addEventListener('click', element => {
     productControler.toCart(element);
+    //animation btn
     loadIcon.setIcon(element.target);
     setTimeout(() => {loadProducts()}, 1000);
 })
 
+//btn search submit
 $('[data-btnSearch]').addEventListener('click', element => {
     element.preventDefault()
     if(searchInput.value) search(searchInput.value);
@@ -46,6 +49,7 @@ function renderPage(list) {
     totalOfProducts.innerHTML = `R$${productControler.getValueTotal().toFixed(2)}`
 }
 
+// search bar
 async function search(term) {    
     let list = await clienteService.searchOnCart(term)    
     renderPage(list)   

@@ -2,27 +2,28 @@ import { clienteService } from "../service/cliente-service.js";
 
 var cart = JSON.parse(localStorage.getItem('Cart')) || [];
 
+//function to control add and remove btn
 function toCart(element) {
     let attributeValue = element.target.getAttribute('data-cart');
     let isAddBtn = element.target.getAttribute('data-cart') === 'add'; // remove after
     let isRemoveBtn = element.target.getAttribute('data-cart') === 'remove'; // remove after
-    
+    //add 1 unity
     if (attributeValue === 'add') {
         let product = element.target.closest('[data-id]');
         let productId = parseInt(product.dataset.id);
         _addToCart(productId);
     }
-    
+    //remove 1 unity
     if (attributeValue === 'remove') {
         let product = element.target.closest('[data-id]');
         let productId = parseInt(product.dataset.id);
         _removeUndFromCart(productId);
     }
-    
+    //remove all products
     if (attributeValue === 'removeAll') {
         _removeAllFromCart()
     }
-
+    //remove all products units 
     if (attributeValue === 'removeItem') {
         let product = element.target.closest('[data-id]');
         let productId = parseInt(product.dataset.id);
@@ -79,7 +80,7 @@ async function _addToCart(id) {
     localStorage.Cart = JSON.stringify(cart);
 
     //TODO 
-    //deixar o botão de remover ativo apenar se o produto estiver no carrinho
+    //leave the remove button active only if the product is in the cart
 }
 
 function _removeUndFromCart(id) {
